@@ -13,7 +13,6 @@ module.exports = {
 		filename: 'js/index.min.js',
 		publicPath: '/public/'
 	},
-	mode: 'production',
 	devtool: 'source-map',
 	module: {
 		rules: [
@@ -78,8 +77,8 @@ module.exports = {
 	},
 	devServer: {
 		historyApiFallback: true,
-		contentBase       : path.join(__dirname, 'public'),
-		watchContentBase  : true,
+		// contentBase       : path.join(__dirname, 'public'),
+		// watchContentBase  : true,
 	},
 	plugins: debug ?
 	[
